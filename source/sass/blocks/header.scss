@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 35px 103px;
+  box-sizing: border-box;
+}
+
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__nav a {
+  display: block;
+  margin-left: 13px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9fbfd;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.header__nav button {
+  display: none;
+}
+
+@media (max-width: $tablet-width-only) {
+  .header {
+    padding: 26px 45px;
+  }
+
+  .header__logo svg {
+    width: 38px;
+    height: 20px;
+    margin-top: 4px;
+  }
+
+  .header__nav a {
+    margin-left: 13px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header {
+    padding: 20px 15px;
+  }
+
+  .header__nav--closed ul {
+    display: none;
+  }
+
+  .header__nav--opened ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 78px 15px 49px;
+    box-sizing: border-box;
+    background-color: #fafbfd;
+  }
+
+  .header__nav--opened li:nth-child(2) {
+    order: -1;
+  }
+
+  .header__logo svg {
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 22px;
+    margin-top: 0;
+  }
+
+  .header__nav a {
+    width: 100%;
+    margin-left: 0;
+    padding: 11px 0 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+  }
+
+  .header__nav--nojs button::before {
+    display: none;
+  }
+
+  .header__nav button {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  .header__nav--closed button::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 24px;
+    height: 14px;
+    background-image: url("../img/icon-menu-closed.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .header__nav--opened button::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    background-image: url("../img/icon-menu-opened.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
