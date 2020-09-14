@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 35px 93px 35px 103px;
+  padding: 35px 6.81% 35px 7.54%;
   box-sizing: border-box;
 }
 
@@ -41,7 +41,7 @@
 
 @media (max-width: $tablet-width-only) {
   .header {
-    padding: 26px 40px 26px 45px;
+    padding: 26px 5.21% 26px 5.86%;
   }
 
   .header__logo svg {
@@ -60,7 +60,7 @@
 
 @media (max-width: $mobile-width-only) {
   .header {
-    padding: 20px 15px;
+    padding: 20px 4.69%;
   }
 
   .header__nav--closed ul {

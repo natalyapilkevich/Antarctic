@@ -1,8 +1,9 @@
 .footer {
+  flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 38px 103px 35px;
+  padding: 38px 7.54% 35px;
   box-sizing: border-box;
   background-color: #011c40;
 }
@@ -48,9 +49,13 @@
   margin-left: 33px;
 }
 
+.footer__social-item:first-child a {
+  margin-left: 0;
+}
+
 @media (max-width: $tablet-width-only) {
   .footer {
-    padding: 38px 45px 37px;
+    padding: 38px 5.86% 37px;
   }
 
   .footer__list--nav a {
@@ -97,7 +102,7 @@
 @media (max-width: $mobile-width-only) {
   .footer {
     display: block;
-    padding: 31px 15px 37px;
+    padding: 31px 4.69% 37px;
   }
 
   .footer__list--nav {

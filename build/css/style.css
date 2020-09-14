@@ -26,7 +26,19 @@
   font-style: normal;
   font-display: swap; }
 
+html {
+  height: 100%; }
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif; }
@@ -68,33 +80,36 @@ a {
   .br--mobile {
     display: inline; } }
 
-.page-wrapper {
+.header-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   width: 100%;
   min-height: 650px;
   background: #1957b1 url("../img/bg-head-icebergs-desktop@1x.jpg") center no-repeat;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .page-wrapper {
+    .header-wrapper {
       background: #1957b1 url("../img/bg-head-icebergs-desktop@2x.jpg") center no-repeat;
       background-size: cover; } }
 
 @media (max-width: 1023px) {
-  .page-wrapper {
+  .header-wrapper {
     min-height: 638px;
     background: #1957b1 url("../img/bg-head-icebergs-tablet@1x.jpg") center no-repeat;
     background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-    .page-wrapper {
+    .header-wrapper {
       background: #1957b1 url("../img/bg-head-icebergs-tablet@2x.jpg") center no-repeat;
       background-size: cover; } }
 
 @media (max-width: 767px) {
-  .page-wrapper {
+  .header-wrapper {
     min-height: 500px;
     background: #1957b1 url("../img/bg-head-icebergs-mobile@1x.jpg") center no-repeat;
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .page-wrapper {
+    .header-wrapper {
       background: #1957b1 url("../img/bg-head-icebergs-mobile@2x.jpg") center no-repeat;
       background-size: cover; } }
 
@@ -106,7 +121,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 35px 93px 35px 103px;
+  padding: 35px 6.81% 35px 7.54%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -140,7 +155,7 @@ a {
 
 @media (max-width: 1023px) {
   .header {
-    padding: 26px 40px 26px 45px; }
+    padding: 26px 5.21% 26px 5.86%; }
   .header__logo svg {
     width: 38px;
     height: 20px;
@@ -153,7 +168,7 @@ a {
 
 @media (max-width: 767px) {
   .header {
-    padding: 20px 15px; }
+    padding: 20px 4.69%; }
   .header__nav--closed ul {
     display: none; }
   .header__nav--opened ul {
@@ -225,7 +240,7 @@ a {
     background-repeat: no-repeat; } }
 
 .banner {
-  margin: 158px 198px; }
+  margin: 158px 14.45%; }
 
 .banner h1 {
   margin: 0;
@@ -245,7 +260,7 @@ a {
 
 @media (max-width: 1023px) {
   .banner {
-    margin: 188px 45px; }
+    margin: 188px 5.86%; }
   .banner h1 {
     margin: 0;
     font-size: 50px;
@@ -257,7 +272,7 @@ a {
 
 @media (max-width: 767px) {
   .banner {
-    margin: 110px 15px; }
+    margin: 110px 4.69%; }
   .banner h1 {
     margin: 0;
     font-size: 36px;
@@ -267,7 +282,15 @@ a {
     font-size: 16px;
     line-height: 22px; } }
 
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,10 +298,10 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 38px 103px 35px;
+  padding: 38px 7.54% 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #011C40; }
+  background-color: #011c40; }
 
 .footer__list {
   display: -webkit-box;
@@ -317,9 +340,12 @@ a {
 .footer__list--social a {
   margin-left: 33px; }
 
+.footer__social-item:first-child a {
+  margin-left: 0; }
+
 @media (max-width: 1023px) {
   .footer {
-    padding: 38px 45px 37px; }
+    padding: 38px 5.86% 37px; }
   .footer__list--nav a {
     margin-right: 24px;
     padding: 9.5px 0;
@@ -348,7 +374,7 @@ a {
 @media (max-width: 767px) {
   .footer {
     display: block;
-    padding: 31px 15px 37px; }
+    padding: 31px 4.69% 37px; }
   .footer__list--nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
