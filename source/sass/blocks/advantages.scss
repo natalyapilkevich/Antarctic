@@ -1,0 +1,126 @@
+.advantages {
+  width: 100%;
+  padding: 110px 7.54% 120px;
+  box-sizing: border-box;
+  background: #e0eaf6 url("../img/bg-advantages-icebergs-desktop@1x.jpg") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: #e0eaf6 url("../img/bg-advantages-icebergs-desktop@2x.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.advantages h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #011c40;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 49px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__list li {
+  width: 31.03%;
+  margin-right: 3.448%;
+  padding: 30px 30px 24px;
+  box-sizing: border-box;
+  background-color: #f9fbfd;
+}
+
+.advantages__list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.advantages__list svg {
+  height: 32px;
+}
+
+.advantages__list h3 {
+  margin: 16px 0 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+}
+
+.advantages__list p {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #011c40;
+}
+
+@media (max-width: $tablet-width-only) {
+  .advantages {
+    padding: 90px 5.86% 100px;
+    background: #e0eaf6 url("../img/bg-advantages-icebergs-tablet@1x.jpg") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #e0eaf6 url("../img/bg-advantages-icebergs-tablet@2x.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__list li {
+    width: 30.38%;
+    margin-right: 4.425%;
+    padding: 25px 16px 20px 20px;
+  }
+
+  .advantages__list svg {
+    height: 26px;
+  }
+
+  .advantages__list h3 {
+    margin: 16px 0 9px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages {
+    padding: 57px 4.69% 34px;
+    background: #e0eaf6 url("../img/bg-advantages-icebergs-mobile@1x.jpg") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #e0eaf6 url("../img/bg-advantages-icebergs-mobile@2x.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    margin: 30px 0 0;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages__list li {
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 25px 20px 20px;
+  }
+}

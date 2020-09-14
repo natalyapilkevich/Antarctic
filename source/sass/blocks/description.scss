@@ -1,7 +1,7 @@
 .description {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 120px 7.54% 116px;
@@ -10,7 +10,8 @@
 }
 
 .description__text {
-  width: 520px;
+  width: 44.7%;
+  margin-right: 3.5%;
 }
 
 .description__text h2 {
@@ -31,6 +32,10 @@
   color: #011c40;
 }
 
+.description__image {
+  margin-left: 3.5%;
+}
+
 @media (max-width: $tablet-width-only) {
   .description {
     align-items: flex-start;
@@ -38,7 +43,8 @@
   }
 
   .description__text {
-    width: 320px;
+    width: 47.8%;
+    margin-right: 2.2%;
   }
 
   .description__text h2 {
@@ -48,6 +54,10 @@
 
   .description__text p {
     margin: 18px 0 0;
+  }
+
+  .description__image {
+    margin-left: 2.2%;
   }
 
   .description__image img {
@@ -62,11 +72,14 @@
     padding: 57px 4.69% 61px;
   }
 
-  .description__text,
-  .description__image {
+  .description__text {
+    width: 100%;
     margin: 0 auto;
   }
 
+  .description__image {
+    margin: 0 auto;
+  }
 
   .description__text h2 {
     font-size: 24px;
