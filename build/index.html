@@ -68,7 +68,30 @@
     </section>
   </div>
   <main class="main">
-      <h2>Путешествие на край Земли</h2>
+    <section class="main__description description">
+      <div class="description__text">
+        <h2>Путешествие <br class="br--tablet br--mobile"> на край Земли</h2>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе <br class="br--tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас <br class="br--tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+      </div>
+      <div class="description__image">
+        <picture>
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
+
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source media="(min-width: 768px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
+          <!-- 1х: 290px; 2x: 580px -->
+          <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@2x.jpg 2x" alt="Пингвины" width="560" height="301">
+        </picture>
+      </div>
+    </section>
+
   </main>
   <footer class="footer">
     <ul class="footer__list footer__list--nav">
