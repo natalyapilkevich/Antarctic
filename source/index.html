@@ -408,6 +408,30 @@
         </li>
       </ul>
     </section>
+    <section class="main__reservation reservation">
+      <div class="reservation__description">
+        <h2>Раннее бронирование</h2>
+        <p>Забронируйте тур<br class="br--mobile"> за 3-6 месяцев<br class="br--desktop br--tablet"> до даты выезда и сэкономьте до 50%</p>
+      </div>
+      <form class="reservation__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p>Оставьте заявку<br class="br--mobile"> и мы свяжемся с вами в ближайшее время</p>
+        <fieldset>
+          <input id="name" type="text" name="name" placeholder="Валерия" required>
+          <label class="visually-hidden" for="name">Имя:</label>
+
+          <input id="tel" type="tel" name="phone" placeholder="89236889975" required pattern="[0-9]{11}">
+          <label class="visually-hidden" for="tel">Телефон:</label>
+
+          <input id="email" type="email" name="email" placeholder="grishaewa.lera@gmail.com" required>
+          <label class="visually-hidden" for="email">Электронная почта:</label>
+        </fieldset>
+        <div class="reservation__agreement">
+          <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" checked required>
+          <label for="agreement">Я согласен на обработку моих персональных данных</label>
+        </div>
+        <button type="submit">Оставить заявку</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <ul class="footer__list footer__list--nav">
