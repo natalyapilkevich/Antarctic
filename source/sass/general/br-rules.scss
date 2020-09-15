@@ -3,6 +3,10 @@
   display: none;
 }
 
+.br--desktop {
+  display: inline;
+}
+
 @media (max-width: $tablet-width-only) {
   .br--mobile,
   .br--desktop {

@@ -1,0 +1,25 @@
+    <section class="main__form form">
+      <div class="form__description">
+        <h2>Раннее бронирование</h2>
+        <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+      </div>
+      <form>
+        <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+        <fieldset>
+          <p>
+            <label>Имя:</label>
+            <input id="name" type="text" name="name" placeholder="Валерия" required="">
+          </p>
+          <p>
+            <label>Телефон:</label>
+            <input id="lastname" type="text" name="lastname" placeholder="89236889975" required="">
+          </p>
+          <p>
+            <label for="patronymic">Электронная почта:</label>
+            <input id="patronymic" type="text" name="patronymic" placeholder="grishaewa.lera@gmail.com" required="">
+          </p>
+        </fieldset>
+      </form>
+
+
+    </section>
