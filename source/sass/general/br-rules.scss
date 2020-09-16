@@ -1,30 +1,30 @@
-.br--tablet,
-.br--mobile {
+.br-tablet,
+.br-mobile {
   display: none;
 }
 
-.br--desktop {
+.br-desktop {
   display: inline;
 }
 
 @media (max-width: $tablet-width-only) {
-  .br--mobile,
-  .br--desktop {
+  .br-mobile,
+  .br-desktop {
     display: none;
   }
 
-  .br--tablet {
+  .br-tablet {
     display: inline;
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .br--desktop,
-  .br--tablet {
+  .br-desktop,
+  .br-tablet {
     display: none;
   }
 
-  .br--mobile {
+  .br-mobile {
     display: inline;
   }
 }

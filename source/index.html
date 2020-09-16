@@ -7,19 +7,18 @@
   <meta name="keywords" content="Арктика, круиз, путешествие">
   <meta name="description" content="Круизы в Антарктику">
   <title>Круизы в Антарктику</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite_auto.svg">
-    </include>
-  </div>
   <div class="header-wrapper">
     <header class="header">
       <a class="header__logo">
         <svg width="70" height="38">
-          <use xlink:href="#logo-main"></use>
+          <use xlink:href="img/sprite_auto.svg#logo-main"></use>
         </svg>
       </a>
       <nav class="header__nav header__nav--opened header__nav--nojs">
@@ -35,30 +34,30 @@
       </nav>
     </header>
     <section class="banner">
-      <h1>Круизы <br class="br--mobile"> в Антарктику </h1>
-      <p>Волшебный мир <br class="br--mobile"> айсбергов и пингвинов</p>
+      <h1>Круизы <br class="br-mobile"> в Антарктику </h1>
+      <p>Волшебный мир <br class="br-mobile"> айсбергов и пингвинов</p>
     </section>
   </div>
   <main class="main">
     <section class="main__description description">
       <div class="description__text">
-        <h2>Путешествие <br class="br--tablet br--mobile"> на край Земли</h2>
-        <p>Это волшебное путешествие поможет вам познакомиться поближе <br class="br--tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас <br class="br--tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+        <h2>Путешествие <br class="br-tablet br-mobile"> на край Земли</h2>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе <br class="br-tablet"> с удивительным миром Антарктики. Наш круизный лайнер отвезет вас <br class="br-tablet"> на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
       <div class="description__image">
         <picture>
-          <!-- 1х: 560px; 2x: 1120px -->
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
-          <!-- 1х: 324px; 2x: 648px -->
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
           <!-- 1х: 290px; 2x: 580px -->
-          <source type="image/webp" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
+           <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
 
-          <!-- 1х: 560px; 2x: 1120px -->
-          <source media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x">
-          <!-- 1х: 324px; 2x: 648px -->
-          <source media="(min-width: 768px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
           <!-- 1х: 290px; 2x: 580px -->
+          <source media="(max-width: 767px)" srcset="img/penguins-mobile@1x.jpg 1x, img/penguins-mobile@2x.jpg 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
+           <!-- 1х: 560px; 2x: 1120px -->
           <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@2x.jpg 2x" alt="Пингвины" width="560" height="301">
         </picture>
       </div>
@@ -67,19 +66,19 @@
       <h2>Преимущества</h2>
       <ul class="advantages__list">
         <li>
-          <svg width="27" height="32"><use xlink:href="#icon-ship"></use></svg>
-          <h3>Небольшой<br class="br--mobile"> круизный лайнер</h3>
-          <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума<br class="br--mobile"> и очередей <br class="br--tablet">и даст возможность насладиться видами<br class="br--tablet"> и природой.</p>
+          <svg width="27" height="32"><use xlink:href="img/sprite_auto.svg#icon-ship"></use></svg>
+          <h3>Небольшой<br class="br-mobile"> круизный лайнер</h3>
+          <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума<br class="br-mobile"> и очередей <br class="br-tablet">и даст возможность насладиться видами<br class="br-tablet"> и природой.</p>
         </li>
         <li>
-          <svg width="38" height="21"><use xlink:href="#icon-tick"></use></svg>
-          <h3>Система <br class="br--tablet br--mobile">все включено</h3>
-          <p>Все наши круизы работают <br class="br--desktop br--mobile"> по системе “Все Включено”. Великолепные блюда<br class="br--mobile"> и безлимитный бар доступны<br class="br--mobile"> для вас<br class="br--tablet"> 24 часа.</p>
+          <svg width="38" height="21"><use xlink:href="img/sprite_auto.svg#icon-tick"></use></svg>
+          <h3>Система <br class="br-tablet br-mobile">все включено</h3>
+          <p>Все наши круизы работают <br class="br-desktop br-mobile"> по системе “Все Включено”. Великолепные блюда<br class="br-mobile"> и безлимитный бар доступны<br class="br-mobile"> для вас<br class="br-tablet"> 24 часа.</p>
         </li>
         <li>
-          <svg width="42" height="15"><use xlink:href="#icon-boat"></use></svg>
-          <h3>Экскурсионные<br class="br--mobile"> туры на Zodiac</h3>
-          <p>Экскурсионные туры<br class="br--tablet"> к берегам Антарктиды совершаются <br class="br--desktop br--mobile"> на оборудованных<br class="br--tablet"> лодках<br class="br--mobile"> типа<br class="br--desktop"> Zodiac<br class="br--tablet"> в сопровождении<br class="br--desktop"> опытных экскурсоводов.</p>
+          <svg width="42" height="15"><use xlink:href="img/sprite_auto.svg#icon-boat"></use></svg>
+          <h3>Экскурсионные<br class="br-mobile"> туры на Zodiac</h3>
+          <p>Экскурсионные туры<br class="br-tablet"> к берегам Антарктиды совершаются <br class="br-desktop br-mobile"> на оборудованных<br class="br-tablet"> лодках<br class="br-mobile"> типа<br class="br-desktop"> Zodiac<br class="br-tablet"> в сопровождении<br class="br-desktop"> опытных экскурсоводов.</p>
         </li>
       </ul>
     </section>
@@ -90,18 +89,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз "Астория"</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-astoria-mobile@1x.webp 1x, img/cruise-astoria-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-astoria-mobile@1x.webp 1x, img/cruise-astoria-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.webp 1x, img/cruise-astoria-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-astoria-desktop@1x.webp 1x, img/cruise-astoria-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-astoria-desktop@1x.jpg 1x, img/cruise-astoria-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-astoria-mobile@1x.jpg 1x, img/cruise-astoria-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet@1x.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-astoria-desktop@1x.jpg" srcset="img/cruise-astoria-desktop@2x.jpg 2x" alt="Круиз Астория" width="260" height="386">
             </picture>
           </a>
@@ -130,18 +129,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз "Элайн"</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-elain-desktop@1x.webp 1x, img/cruise-elain-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-elain-tablet@1x.webp 1x, img/cruise-elain-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-elain-mobile@1x.webp 1x, img/cruise-elain-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-elain-mobile@1x.webp 1x, img/cruise-elain-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-elain-tablet@1x.webp 1x, img/cruise-elain-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-elain-desktop@1x.webp 1x, img/cruise-elain-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-elain-desktop@1x.jpg 1x, img/cruise-elain-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-elain-tablet@1x.jpg 1x, img/cruise-elain-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-elain-mobile@1x.jpg 1x, img/cruise-elain-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-elain-tablet@1x.jpg 1x, img/cruise-elain-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-elain-desktop@1x.jpg" srcset="img/cruise-elain-desktop@2x.jpg 2x" alt="Круиз Элайн" width="260" height="386">
             </picture>
           </a>
@@ -170,18 +169,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз “Атлантис”</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-atlantic-desktop@1x.webp 1x, img/cruise-atlantic-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-atlantic-tablet@1x.webp 1x, img/cruise-atlantic-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-atlantic-mobile@1x.webp 1x, img/cruise-atlantic-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-atlantic-mobile@1x.webp 1x, img/cruise-atlantic-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-atlantic-tablet@1x.webp 1x, img/cruise-atlantic-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-atlantic-desktop@1x.webp 1x, img/cruise-atlantic-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-atlantic-desktop@1x.jpg 1x, img/cruise-atlantic-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-atlantic-tablet@1x.jpg 1x, img/cruise-atlantic-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-atlantic-mobile@1x.jpg 1x, img/cruise-atlantic-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-atlantic-tablet@1x.jpg 1x, img/cruise-atlantic-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-atlantic-desktop@1x.jpg" srcset="img/cruise-atlantic-desktop@2x.jpg 2x" alt="Круиз Атлантис" width="260" height="386">
             </picture>
           </a>
@@ -210,18 +209,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз “Одиссей”</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-odysseus-desktop@1x.webp 1x, img/cruise-odysseus-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-odysseus-tablet@1x.webp 1x, img/cruise-odysseus-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-odysseus-mobile@1x.webp 1x, img/cruise-odysseus-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-odysseus-mobile@1x.webp 1x, img/cruise-odysseus-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-odysseus-tablet@1x.webp 1x, img/cruise-odysseus-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-odysseus-desktop@1x.webp 1x, img/cruise-odysseus-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-odysseus-desktop@1x.jpg 1x, img/cruise-odysseus-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-odysseus-tablet@1x.jpg 1x, img/cruise-odysseus-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-odysseus-mobile@1x.jpg 1x, img/cruise-odysseus-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-odysseus-tablet@1x.jpg 1x, img/cruise-odysseus-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-odysseus-desktop@1x.jpg" srcset="img/cruise-odysseus-desktop@2x.jpg 2x" alt="Круиз Одиссей" width="260" height="386">
             </picture>
           </a>
@@ -250,18 +249,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз “Олимпия”</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-olympia-desktop@1x.webp 1x, img/cruise-olympia-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-olympia-tablet@1x.webp 1x, img/cruise-olympia-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-olympia-mobile@1x.webp 1x, img/cruise-olympia-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-olympia-mobile@1x.webp 1x, img/cruise-olympia-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-olympia-tablet@1x.webp 1x, img/cruise-olympia-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-olympia-desktop@1x.webp 1x, img/cruise-olympia-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-olympia-desktop@1x.jpg 1x, img/cruise-olympia-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-olympia-tablet@1x.jpg 1x, img/cruise-olympia-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-olympia-mobile@1x.jpg 1x, img/cruise-olympia-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-olympia-tablet@1x.jpg 1x, img/cruise-olympia-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-olympia-desktop@1x.jpg" srcset="img/cruise-olympia-desktop@2x.jpg 2x" alt="Круиз Олимпия" width="260" height="386">
             </picture>
           </a>
@@ -290,18 +289,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз "Аврора"</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-aurora-desktop@1x.webp 1x, img/cruise-aurora-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-aurora-tablet@1x.webp 1x, img/cruise-aurora-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-aurora-mobile@1x.webp 1x, img/cruise-aurora-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-aurora-mobile@1x.webp 1x, img/cruise-aurora-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-aurora-tablet@1x.webp 1x, img/cruise-aurora-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-aurora-desktop@1x.webp 1x, img/cruise-aurora-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-aurora-desktop@1x.jpg 1x, img/cruise-aurora-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-aurora-tablet@1x.jpg 1x, img/cruise-aurora-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-aurora-mobile@1x.jpg 1x, img/cruise-aurora-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-aurora-tablet@1x.jpg 1x, img/cruise-aurora-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-aurora-desktop@1x.jpg" srcset="img/cruise-aurora-desktop@2x.jpg 2x" alt="Круиз Аврора" width="260" height="386">
             </picture>
           </a>
@@ -330,18 +329,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз "Леонор"</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-leonor-desktop@1x.webp 1x, img/cruise-leonor-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-leonor-tablet@1x.webp 1x, img/cruise-leonor-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-leonor-mobile@1x.webp 1x, img/cruise-leonor-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-leonor-mobile@1x.webp 1x, img/cruise-leonor-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet@1x.webp 1x, img/cruise-leonor-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-leonor-desktop@1x.webp 1x, img/cruise-leonor-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-leonor-desktop@1x.jpg 1x, img/cruise-leonor-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-leonor-tablet@1x.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-leonor-mobile@1x.jpg 1x, img/cruise-leonor-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet@1x.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-leonor-desktop@1x.jpg" srcset="img/cruise-leonor-desktop@2x.jpg 2x" alt="Круиз Леонор" width="260" height="386">
             </picture>
           </a>
@@ -370,18 +369,18 @@
           <a class="cruises__front" href="#">
             <h3>Круиз "Минион - 1"</h3>
             <picture>
-              <!-- 1х: 260px; 2x: 520px -->
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/cruise-minion1-desktop@1x.webp 1x, img/cruise-minion1-desktop@2x.webp 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cruise-minion1-tablet@1x.webp 1x, img/cruise-minion1-tablet@2x.webp 2x">
               <!-- 1х: 270px; 2x: 540px -->
-              <source type="image/webp" srcset="img/cruise-minion1-mobile@1x.webp 1x, img/cruise-minion1-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/cruise-minion1-mobile@1x.webp 1x, img/cruise-minion1-mobile@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/cruise-minion1-tablet@1x.webp 1x, img/cruise-minion1-tablet@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source type="image/webp" srcset="img/cruise-minion1-desktop@1x.webp 1x, img/cruise-minion1-desktop@2x.webp 2x">
 
-              <!-- 1х: 260px; 2x: 520px -->
-              <source media="(min-width: 1024px)" srcset="img/cruise-minion1-desktop@1x.jpg 1x, img/cruise-minion1-desktop@2x.jpg 2x">
-              <!-- 1х: 309px; 2x: 618px -->
-              <source media="(min-width: 768px)" srcset="img/cruise-minion1-tablet@1x.jpg 1x, img/cruise-minion1-tablet@2x.jpg 2x">
               <!-- 1х: 270px; 2x: 540px -->
+              <source media="(max-width: 767px)" srcset="img/cruise-minion1-mobile@1x.jpg 1x, img/cruise-minion1-mobile@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(max-width: 1023px)" srcset="img/cruise-minion1-tablet@1x.jpg 1x, img/cruise-minion1-tablet@2x.jpg 2x">
+              <!-- 1х: 260px; 2x: 520px -->
               <img src="img/cruise-minion1-desktop@1x.jpg" srcset="img/cruise-minion1-desktop@2x.jpg 2x" alt="Круиз Минион - 1" width="260" height="386">
             </picture>
           </a>
@@ -411,10 +410,10 @@
     <section class="main__reservation reservation">
       <div class="reservation__description">
         <h2>Раннее бронирование</h2>
-        <p>Забронируйте тур<br class="br--mobile"> за 3-6 месяцев<br class="br--desktop br--tablet"> до даты выезда и сэкономьте до 50%</p>
+        <p>Забронируйте тур<br class="br-mobile"> за 3-6 месяцев<br class="br-desktop br-tablet"> до даты выезда и сэкономьте до 50%</p>
       </div>
       <form class="reservation__form" action="https://echo.htmlacademy.ru/" method="post">
-        <p>Оставьте заявку<br class="br--mobile"> и мы свяжемся с вами в ближайшее время</p>
+        <p>Оставьте заявку<br class="br-mobile"> и мы свяжемся с вами в ближайшее время</p>
         <fieldset>
           <input id="name" type="text" name="name" placeholder="Валерия" required>
           <label class="visually-hidden" for="name">Имя:</label>
@@ -432,12 +431,51 @@
         <button type="submit">Оставить заявку</button>
       </form>
     </section>
+    <section class="main__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__info">
+        <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам<br class="br-tablet"> в офис и мы вам все расскажем.</p>
+        <a href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474?hl=ru">
+          <svg width="18" height="22">
+            <use xlink:href="img/sprite_auto.svg#icon-map-mark"></use>
+          </svg>
+          <span>г. Санкт Петербург,<br class="br-tablet br-mobile"> ул. Большая Конюшенная, 19/8</span>
+        </a>
+        <a href="tel:8-800-200-00-00">
+          <svg width="18" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+          </svg>
+          <span>8-800-200-00-00</span>
+        </a>
+      </div>
+      <div class="contacts__map">
+        <div class="contacts__googlemap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2204866109114!2d30.322836971508362!3d59.938852679345395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1600251468028!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <picture>
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+
+
+          <!-- 1х: 290px; 2x: 580px -->
+          <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8" width="560" height="306">
+        </picture>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <ul class="footer__list footer__list--nav">
       <li><a class="footer__logo">
         <svg width="70" height="38">
-          <use xlink:href="#logo-main"></use>
+          <use xlink:href="img/sprite_auto.svg#logo-main"></use>
         </svg>
       </a></li>
       <li><a href="#">Преимущества</a></li>
@@ -448,15 +486,15 @@
     <ul class="footer__list footer__list--social">
       <li class="footer__social-item"><a href="#">
           <span class="visually-hidden">Facebook</span>
-          <svg class="footer__icon-facebook" width="11" height="20"><use xlink:href="#icon-facebook"></use></svg>
+          <svg class="footer__icon-facebook" width="11" height="20"><use xlink:href="img/sprite_auto.svg#icon-facebook"></use></svg>
       </a></li>
       <li class="footer__social-item"><a href="#">
           <span class="visually-hidden">Instagram</span>
-          <svg class="footer__icon-instagram" width="20" height="20"><use xlink:href="#icon-instagram"></use></svg>
+          <svg class="footer__icon-instagram" width="20" height="20"><use xlink:href="img/sprite_auto.svg#icon-instagram"></use></svg>
       </a></li>
       <li class="footer__social-item"><a href="#">
           <span class="visually-hidden">Twitter</span>
-          <svg class="footer__icon-twitter" width="20" height="16"><use xlink:href="#icon-twitter"></use></svg>
+          <svg class="footer__icon-twitter" width="20" height="16"><use xlink:href="img/sprite_auto.svg#icon-twitter"></use></svg>
       </a></li>
     </ul>
   </footer>

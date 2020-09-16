@@ -62,25 +62,25 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.br--tablet,
-.br--mobile {
+.br-tablet,
+.br-mobile {
   display: none; }
 
-.br--desktop {
+.br-desktop {
   display: inline; }
 
 @media (max-width: 1023px) {
-  .br--mobile,
-  .br--desktop {
+  .br-mobile,
+  .br-desktop {
     display: none; }
-  .br--tablet {
+  .br-tablet {
     display: inline; } }
 
 @media (max-width: 767px) {
-  .br--desktop,
-  .br--tablet {
+  .br-desktop,
+  .br-tablet {
     display: none; }
-  .br--mobile {
+  .br-mobile {
     display: inline; } }
 
 .header-wrapper {
@@ -537,7 +537,7 @@ a {
   top: 0;
   left: 0;
   display: block;
-  min-height: 386px;
+  height: 100%;
   padding: 30px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -910,6 +910,120 @@ a {
     height: 20px; }
   .reservation__form button {
     margin: 26px 0 0; } }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 120px 7.54%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f9fbfd; }
+
+.contacts__info {
+  width: 43.1%;
+  margin-left: 8.6%;
+  padding-top: 20px; }
+
+.contacts__info p {
+  margin: 0 0 32px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40; }
+
+.contacts__info a {
+  display: block;
+  margin: 20px 0; }
+  .contacts__info a:hover, .contacts__info a:focus {
+    opacity: 0.8;
+    cursor: pointer; }
+  .contacts__info a:active {
+    opacity: 0.5; }
+
+.contacts__info svg {
+  margin-right: 6px;
+  vertical-align: middle; }
+
+.contacts__info span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #011c40; }
+
+.contacts__map {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 48.3%;
+  height: 306px;
+  background-color: wheat; }
+
+.contacts__googlemap {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 306px; }
+
+.contacts__googlemap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+@media (max-width: 1023px) {
+  .contacts {
+    padding: 100px 5.86%; }
+  .contacts__info {
+    width: 47.79%;
+    margin-left: 4.42%; }
+  .contacts__info p {
+    margin: 0 0 28px; }
+  .contacts__info a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top; }
+  .contacts__info svg {
+    margin: 3px 10px 0 0; }
+  .contacts__map {
+    width: 47.79%;
+    height: 335px; }
+  .contacts__googlemap {
+    height: 335px; } }
+
+@media (max-width: 767px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 38px 4.69% 65px; }
+  .contacts__info {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px; }
+  .contacts__info p {
+    padding-right: 5px; }
+  .contacts__map {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    height: 316px;
+    margin-top: 16px; }
+  .contacts__googlemap {
+    height: 316px; } }
 
 .footer {
   -webkit-box-flex: 0;
