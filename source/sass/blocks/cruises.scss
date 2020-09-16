@@ -56,9 +56,10 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: block;
-  height: 100%;
-  padding: 30px 25px;
+  min-height: 100%;
+  padding: 30px 25px 10px;
   box-sizing: border-box;
   color: #f9fbfd;
   background: #011c40;
@@ -86,7 +87,7 @@
 
 .cruises__button {
   display: block;
-  width: 210px;
+  width: 100%;
   margin-top: 26px;
   padding: 10px 10px 9px;
   box-sizing: border-box;
@@ -121,11 +122,7 @@
 
   .cruises__item:hover .cruises__info,
   .cruises__front:focus ~ .cruises__info {
-    padding: 30px 35px;
-  }
-
-  .cruises__button {
-    width: 239px;
+    padding: 30px 35px 10px;
   }
 }
 
@@ -140,8 +137,12 @@
     line-height: 36px;
   }
 
+  .cruises ul {
+    justify-content: center;
+  }
+
   .cruises__item {
-    margin: 15px auto;
+    margin: 15px;
   }
 
   .cruises__front h3 {
@@ -155,10 +156,6 @@
 
   .cruises__item:hover .cruises__info,
   .cruises__front:focus ~ .cruises__info {
-    padding: 30px 25px;
-  }
-
-  .cruises__button {
-    width: 220px;
+    padding: 30px 25px 10px;
   }
 }

@@ -172,9 +172,9 @@ a {
 @media (max-width: 767px) {
   .header {
     padding: 20px 4.69%; }
-  .header__nav--closed ul {
+  .header--closed ul {
     display: none; }
-  .header__nav--opened ul {
+  .header--opened ul {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +187,7 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fafbfd; }
-  .header__nav--opened li:nth-child(2) {
+  .header--opened li:nth-child(2) {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
@@ -206,8 +206,11 @@ a {
     font-size: 18px;
     line-height: 22px;
     color: #011c40; }
-  .header__nav--nojs button::before {
+  .header--nojs button::before {
     display: none; }
+  .header--nojs .header__logo,
+  .header--opened .header__logo {
+    stroke: #011c40; }
   .header__nav button {
     position: relative;
     z-index: 1;
@@ -221,7 +224,7 @@ a {
       cursor: pointer; }
     .header__nav button:active {
       opacity: 0.8; }
-  .header__nav--closed button::before {
+  .header--closed button::before {
     content: "";
     position: absolute;
     top: 4px;
@@ -231,7 +234,7 @@ a {
     background-image: url("../img/icon-menu-closed.svg");
     background-size: contain;
     background-repeat: no-repeat; }
-  .header__nav--opened button::before {
+  .header--opened button::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -536,9 +539,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: block;
-  height: 100%;
-  padding: 30px 25px;
+  min-height: 100%;
+  padding: 30px 25px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f9fbfd;
@@ -564,7 +568,7 @@ a {
 
 .cruises__button {
   display: block;
-  width: 210px;
+  width: 100%;
   margin-top: 26px;
   padding: 10px 10px 9px;
   -webkit-box-sizing: border-box;
@@ -591,9 +595,7 @@ a {
     height: auto; }
   .cruises__item:hover .cruises__info,
   .cruises__front:focus ~ .cruises__info {
-    padding: 30px 35px; }
-  .cruises__button {
-    width: 239px; } }
+    padding: 30px 35px 10px; } }
 
 @media (max-width: 767px) {
   .cruises {
@@ -602,8 +604,12 @@ a {
     margin-bottom: 29px;
     font-size: 24px;
     line-height: 36px; }
+  .cruises ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .cruises__item {
-    margin: 15px auto; }
+    margin: 15px; }
   .cruises__front h3 {
     bottom: 17px;
     left: 25px; }
@@ -611,9 +617,7 @@ a {
     width: 270px; }
   .cruises__item:hover .cruises__info,
   .cruises__front:focus ~ .cruises__info {
-    padding: 30px 25px; }
-  .cruises__button {
-    width: 220px; } }
+    padding: 30px 25px 10px; } }
 
 .reservation {
   display: -webkit-box;
@@ -691,6 +695,7 @@ a {
 
 .reservation__form input,
 .reservation__form input::-webkit-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -700,6 +705,7 @@ a {
 
 .reservation__form input,
 .reservation__form input::-moz-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -709,6 +715,7 @@ a {
 
 .reservation__form input,
 .reservation__form input:-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -718,6 +725,7 @@ a {
 
 .reservation__form input,
 .reservation__form input::-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -727,6 +735,7 @@ a {
 
 .reservation__form input,
 .reservation__form input::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -823,6 +832,7 @@ a {
   margin: 30px 0 0;
   padding: 12px 12px 10px;
   text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -965,8 +975,7 @@ a {
       -ms-flex-order: -1;
           order: -1;
   width: 48.3%;
-  height: 306px;
-  background-color: wheat; }
+  height: 306px; }
 
 .contacts__googlemap {
   position: absolute;

@@ -63,11 +63,11 @@
     padding: 20px 4.69%;
   }
 
-  .header__nav--closed ul {
+  .header--closed ul {
     display: none;
   }
 
-  .header__nav--opened ul {
+  .header--opened ul {
     position: absolute;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@
     background-color: #fafbfd;
   }
 
-  .header__nav--opened li:nth-child(2) {
+  .header--opened li:nth-child(2) {
     order: -1;
   }
 
@@ -100,8 +100,13 @@
     color: #011c40;
   }
 
-  .header__nav--nojs button::before {
+  .header--nojs button::before {
     display: none;
+  }
+
+  .header--nojs .header__logo,
+  .header--opened .header__logo {
+    stroke: #011c40;
   }
 
   .header__nav button {
@@ -124,7 +129,7 @@
     }
   }
 
-  .header__nav--closed button::before {
+  .header--closed button::before {
     content: "";
     position: absolute;
     top: 4px;
@@ -136,7 +141,7 @@
     background-repeat: no-repeat;
   }
 
-  .header__nav--opened button::before {
+  .header--opened button::before {
     content: "";
     position: absolute;
     top: 5px;
