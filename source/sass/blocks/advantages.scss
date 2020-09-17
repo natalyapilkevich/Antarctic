@@ -12,7 +12,7 @@
 }
 
 .advantages h2 {
-  margin: 0;
+  margin: 0 0 49px;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -24,7 +24,8 @@
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 49px 0 0;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -43,10 +44,11 @@
 
 .advantages__list svg {
   height: 32px;
+  margin: 0 0 16px;
 }
 
 .advantages__list h3 {
-  margin: 16px 0 8px;
+  margin: 0 0 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -80,6 +82,10 @@
     line-height: 39px;
   }
 
+  .advantages__list {
+    width: 100%;
+  }
+
   .advantages__list li {
     width: 30.38%;
     margin-right: 4.425%;
@@ -88,10 +94,11 @@
 
   .advantages__list svg {
     height: 26px;
+    margin: 0 0 16px;
   }
 
   .advantages__list h3 {
-    margin: 16px 0 9px;
+    margin: 0 0 9px;
     line-height: 25px;
   }
 }
@@ -108,14 +115,15 @@
     }
   }
 
-  .advantages__list {
-    flex-direction: column;
-    margin: 30px 0 0;
-  }
-
   .advantages h2 {
+    margin: 0 0 30px;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    margin: 0;
   }
 
   .advantages__list li {

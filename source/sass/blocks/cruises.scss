@@ -1,6 +1,7 @@
 .cruises {
-  width: 100%;
-  padding: 110px calc(8.638% - 15px) 120px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 110px 103px 120px;
   box-sizing: border-box;
 }
 
@@ -33,7 +34,6 @@
 
 .cruises__front h3,
 .cruises__info h3 {
-  margin: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -45,6 +45,11 @@
   position: absolute;
   bottom: 21px;
   left: 30px;
+  margin: 0;
+}
+
+.cruises__info h3 {
+  margin: 0 0 12px;
 }
 
 .cruises__info {
@@ -68,7 +73,11 @@
 }
 
 .cruises__info p {
-  margin: 12px 0 11px;
+  margin: 0 0 12px;
+}
+
+.cruises__info p:last-of-type {
+  margin: 0 0 26px;
 }
 
 .cruises__info span {
@@ -88,7 +97,7 @@
 .cruises__button {
   display: block;
   width: 100%;
-  margin-top: 26px;
+  margin: 0;
   padding: 10px 10px 9px;
   box-sizing: border-box;
   font-style: normal;
@@ -102,7 +111,8 @@
 
 @media (max-width: $tablet-width-only) {
   .cruises {
-    padding: 90px calc(7.81% - 15px) 100px;
+    width: 100%;
+    padding: 90px 45px 100px;
   }
 
   .cruises h2 {

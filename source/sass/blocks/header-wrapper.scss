@@ -1,7 +1,6 @@
 .header-wrapper {
   flex: 0 0 auto;
   width: 100%;
-  min-height: 650px;
   background: #1957b1 url("../img/bg-head-icebergs-desktop@1x.jpg") center no-repeat;
   background-size: cover;
 
@@ -13,7 +12,6 @@
 
 @media (max-width: $tablet-width-only) {
   .header-wrapper {
-    min-height: 638px;
     background: #1957b1 url("../img/bg-head-icebergs-tablet@1x.jpg") center no-repeat;
     background-size: cover;
 
@@ -26,7 +24,6 @@
 
 @media (max-width: $mobile-width-only) {
   .header-wrapper {
-    min-height: 500px;
     background: #1957b1 url("../img/bg-head-icebergs-mobile@1x.jpg") center no-repeat;
     background-size: cover;
 

@@ -1,11 +1,16 @@
 .footer {
   flex: 0 0 auto;
+  width: 100%;
+  background-color: #011c40;
+}
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 38px 7.54% 35px;
   box-sizing: border-box;
-  background-color: #011c40;
 }
 
 .footer__list {
@@ -54,7 +59,7 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .footer {
+  .footer__wrapper {
     padding: 38px 5.86% 37px;
   }
 
@@ -100,7 +105,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .footer {
+  .footer__wrapper {
     display: block;
     padding: 31px 4.69% 37px;
   }
