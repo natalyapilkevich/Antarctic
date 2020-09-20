@@ -182,6 +182,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    height: 100%;
     padding: 78px 15px 49px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -243,7 +244,7 @@ a {
 .topic {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 158px 0 266px 198px;
+  padding: 158px 100px 266px 198px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -311,7 +312,7 @@ a {
           align-items: center;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 118px 7.54% 116px;
+  padding: 118px 7.54% 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -335,7 +336,13 @@ a {
   color: #011c40; }
 
 .description__image {
+  width: 48.3%;
   padding-top: 2px; }
+
+.description__image img {
+  display: block;
+  width: 100%;
+  height: 53.75%; }
 
 @media (max-width: 1023px) {
   .description__wrapper {
@@ -352,17 +359,16 @@ a {
   .description__text p {
     margin: 0; }
   .description__image img {
-    padding-top: 8px;
     width: 324px;
-    height: auto; } }
+    height: auto;
+    padding-top: 8px;
+    margin-left: 3px; } }
 
 @media (max-width: 767px) {
   .description__wrapper {
-    padding: 57px 4.69% 61px; }
+    padding: 57px 4.69% 65px; }
   .description__text {
     width: 100%;
-    margin: 0 auto; }
-  .description__image {
     margin: 0 auto; }
   .description__text h2 {
     margin: 0 0 16px;
@@ -370,13 +376,17 @@ a {
     line-height: 34px; }
   .description__text p {
     margin: 0 0 30px; }
+  .description__image {
+    width: 100%;
+    margin: 0 auto; }
   .description__image img {
-    padding: 0;
-    width: 290px; } }
+    width: 290px;
+    margin: 0 auto;
+    padding: 0; } }
 
 .advantages {
   width: 100%;
-  padding: 110px 7.54% 120px;
+  padding: 110px 0 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #e0eaf6 url("../img/bg-advantages-icebergs-desktop@1x.jpg") center no-repeat;
@@ -403,12 +413,14 @@ a {
       flex-wrap: wrap;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 7.54%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none; }
 
 .advantages__list li {
   width: 31.03%;
-  margin-right: 3.448%;
+  margin: 0 3.448% 20px 0;
   padding: 30px 30px 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -439,7 +451,7 @@ a {
 
 @media (max-width: 1023px) {
   .advantages {
-    padding: 90px 5.86% 100px;
+    padding: 90px 0 80px;
     background: #e0eaf6 url("../img/bg-advantages-icebergs-tablet@1x.jpg") center no-repeat;
     background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -452,7 +464,8 @@ a {
     font-size: 26px;
     line-height: 39px; }
   .advantages__list {
-    width: 100%; }
+    width: 100%;
+    padding: 0 5.86%; }
   .advantages__list li {
     width: 30.38%;
     margin-right: 4.425%;
@@ -466,7 +479,7 @@ a {
 
 @media (max-width: 767px) {
   .advantages {
-    padding: 57px 4.69% 34px;
+    padding: 57px 0 34px;
     background: #e0eaf6 url("../img/bg-advantages-icebergs-mobile@1x.jpg") center no-repeat;
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -484,7 +497,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0; }
+    margin: 0;
+    padding: 0 4.69%; }
   .advantages__list li {
     width: 100%;
     margin: 0 0 30px;
@@ -512,9 +526,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px auto;
   padding: 0;
   list-style: none; }
@@ -553,6 +567,7 @@ a {
   left: 0;
   z-index: 2;
   display: block;
+  width: 100%;
   min-height: 100%;
   padding: 30px 25px 10px;
   -webkit-box-sizing: border-box;
@@ -560,8 +575,7 @@ a {
   color: #f9fbfd;
   background: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-          box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-  cursor: pointer; }
+          box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15); }
 
 .cruises__info p {
   margin: 0 0 12px; }
@@ -594,7 +608,8 @@ a {
   line-height: 21px;
   text-align: center;
   color: #011c40;
-  background-color: #f9fbfd; }
+  background-color: #f9fbfd;
+  cursor: pointer; }
 
 @media (max-width: 1023px) {
   .cruises {
@@ -711,7 +726,8 @@ a {
   padding: 12px 16px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 .reservation__form input,
 .reservation__form input::-webkit-input-placeholder {
@@ -816,6 +832,9 @@ a {
   font-size: 10px;
   line-height: 18px;
   color: #f9fbfd; }
+
+.reservation__agreement label:hover {
+  cursor: pointer; }
 
 .reservation__agreement input + label::before {
   position: absolute;
@@ -970,6 +989,9 @@ a {
   line-height: 27px;
   color: #011c40; }
 
+.contacts__address {
+  margin: 0 0 20px; }
+
 .contacts__info a {
   display: block;
   margin: 0 0 20px; }
@@ -1018,7 +1040,8 @@ a {
     margin-left: 4.42%; }
   .contacts__info p {
     margin: 0 0 28px; }
-  .contacts__info a {
+  .contacts__info a,
+  .contacts__address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1071,9 +1094,21 @@ a {
           justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 38px 7.54% 35px;
+  padding: 50px 7.54% 46px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.footer__nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__logo {
+  display: block;
+  margin-right: 40px; }
 
 .footer__list {
   display: -webkit-box;
@@ -1084,6 +1119,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 117px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1097,17 +1133,13 @@ a {
 
 .footer__list--nav a {
   display: block;
-  margin-right: 33px;
+  margin-right: 34px;
   padding: 10px 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd; }
-
-.footer__list--nav .footer__logo {
-  margin-top: 2px;
-  margin-right: 40px; }
 
 .footer__list--social a {
   margin-left: 33px; }
@@ -1117,20 +1149,20 @@ a {
 
 @media (max-width: 1023px) {
   .footer__wrapper {
-    padding: 38px 5.86% 37px; }
+    padding: 42px 5.86% 44px; }
   .footer__list--nav a {
     margin-right: 24px;
     padding: 9.5px 0;
     font-size: 12px;
     line-height: 15px; }
-  .footer__list--nav .footer__logo {
-    margin-top: 3px;
-    margin-right: 25px; }
+  .footer__logo {
+    margin: 3px 25px 0 0; }
   .footer__logo svg {
     width: 38px;
     height: 20px; }
   .footer__list--social {
-    margin-top: 4px; }
+    margin-top: 4px;
+    min-width: 87px; }
   .footer__list--social a {
     margin-left: 23px; }
   .footer__icon-facebook {
@@ -1146,7 +1178,15 @@ a {
 @media (max-width: 767px) {
   .footer__wrapper {
     display: block;
-    padding: 31px 4.69% 37px; }
+    padding: 40px 4.69% 36px; }
+  .footer__nav-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .footer__list--nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1155,16 +1195,17 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 15px; }
+    margin-bottom: 11px; }
   .footer__list--nav a {
     width: 100%;
     margin-right: 0;
     margin-bottom: 5px;
     padding: 6px 0; }
+  .footer__logo {
+    margin: 0 0 18px; }
   .footer__logo svg {
     width: 42px;
-    height: 22px;
-    margin-bottom: 7px; }
+    height: 22px; }
   .footer__list--social a {
     margin-left: 0;
     margin-right: 23px; } }

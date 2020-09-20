@@ -18,7 +18,7 @@
 .cruises ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: -15px auto;
   padding: 0;
   list-style: none;
@@ -63,13 +63,13 @@
   left: 0;
   z-index: 2;
   display: block;
+  width: 100%;
   min-height: 100%;
   padding: 30px 25px 10px;
   box-sizing: border-box;
   color: #f9fbfd;
   background: #011c40;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-  cursor: pointer;
 }
 
 .cruises__info p {
@@ -107,6 +107,7 @@
   text-align: center;
   color: #011c40;
   background-color: #f9fbfd;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width-only) {
