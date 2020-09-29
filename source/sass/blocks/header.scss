@@ -65,6 +65,20 @@
     padding: 20px 4.69%;
   }
 
+  .header--opened {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #fafbfd;
+  }
+
+  .header--nojs {
+    position: static;
+    display: block;
+    height: auto;
+  }
+
   .header--closed ul {
     display: none;
   }
@@ -78,7 +92,12 @@
     height: 100%;
     padding: 78px 15px 49px;
     box-sizing: border-box;
-    background-color: #fafbfd;
+  }
+
+  .header--nojs ul {
+    position: static;
+    height: auto;
+    padding: 15px 0;
   }
 
   .header__logo svg {
@@ -97,10 +116,6 @@
     font-size: 18px;
     line-height: 22px;
     color: #011c40;
-  }
-
-  .header--nojs button::before {
-    display: none;
   }
 
   .header--nojs .header__logo,
@@ -150,5 +165,10 @@
     background-image: url("../img/icon-menu-opened.svg");
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .header--nojs button::before,
+  .header--nojs button {
+    display: none;
   }
 }
