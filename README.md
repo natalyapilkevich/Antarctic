@@ -1,4 +1,4 @@
-<a href="http://antarctic-pilkevich.surge.sh">antarctic-pilkevich.surge.sh</a>
+<a href="http://antarctic-pilkevich.surge.sh" target="_blank">Посмотреть проект</a>
 # Gulp template Liga A
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
